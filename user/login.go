@@ -24,5 +24,6 @@ func CheckLogin(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Successfully logged in")
 	} else {
 		fmt.Fprintf(w, "Invalid username or password")
+		http.Redirect(w, r, "/signup", 302)
 	}
 }
