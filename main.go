@@ -10,6 +10,7 @@ import (
 func main() {
 	http.HandleFunc("/login", user.CheckLogin)
 	http.HandleFunc("/signup", user.Signup)
+	http.HandleFunc("/verify", user.Verify)
 	log.Fatal(http.ListenAndServe(":8192", nil))
 
 }

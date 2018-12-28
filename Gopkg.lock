@@ -12,9 +12,20 @@
   revision = "4ded0e9383f75c197b3a2aaa6d590ac52df6fd79"
   version = "v1.0.0"
 
+[[projects]]
+  branch = "master"
+  digest = "1:f21722d429e03b96a1f981c6ecff8ecbfff810cec27f694cedd9463f25905c5e"
+  name = "github.com/souvikhaldar/gorand"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "aa9807d38fe292f2de311d3548a996d116b0d24a"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/lib/pq"]
+  input-imports = [
+    "github.com/lib/pq",
+    "github.com/souvikhaldar/gorand",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
