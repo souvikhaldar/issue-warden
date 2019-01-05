@@ -1,3 +1,3 @@
-create table issue(id serial primary key,title text not null,description text,assigned_to text,created_by text,status bool,constraint fk_at foreign key(assigned_to) references users(username),constraint fk_cb foreign key(created_by) references users(username));
+create table issue(id serial primary key,title text not null,description text,assigned_to text,created_by text,status bool);
 
 create table users(userid serial primary key,email text unique not null,username text unique,firstname text not null,lastname text,password text not null);

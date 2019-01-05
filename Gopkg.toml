@@ -40,3 +40,7 @@
 [[constraint]]
   branch = "master"
   name = "github.com/souvikhaldar/gorand"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/souvikhaldar/gomail"

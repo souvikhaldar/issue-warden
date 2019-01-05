@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/go-redis/redis"
+	"github.com/souvikhaldar/gomail"
 )
 
 // User contains the details about the customer
@@ -17,16 +18,21 @@ type User struct {
 	AccessToken string
 }
 
-var redisClient *redis.Client
+var RedisClient *redis.Client
+var Mailconfig *gomail.Config
 
 func init() {
-	redisClient = redis.NewClient(&redis.Options{
+	RedisClient = redis.NewClient(&redis.Options{
 		Addr:     "localhost:6379",
 		Password: "", // no password set
 		DB:       0,  // use default DB
 	})
-	pong, err := redisClient.Ping().Result()
-	fmt.Println(pong, err)
+	var e error
+	e, Mailconfig = gomail.New("joeymartin367@gmail.com", "Hu$tl3r11")
+	if e != nil {
+		fmt.Print(fmt.Errorf("Error in creating config %v", e))
+	}
+
 }
 
 func New(email string, username string, firstname string, lastname string, password string, accesstoken string) *User {

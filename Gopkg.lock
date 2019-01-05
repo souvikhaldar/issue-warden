@@ -2,6 +2,23 @@
 
 
 [[projects]]
+  digest = "1:424f6593024cdf0f6f90cba81bc69ca98df3758525e6fb248198ef15ead603a9"
+  name = "github.com/go-redis/redis"
+  packages = [
+    ".",
+    "internal",
+    "internal/consistenthash",
+    "internal/hashtag",
+    "internal/pool",
+    "internal/proto",
+    "internal/singleflight",
+    "internal/util",
+  ]
+  pruneopts = "UT"
+  revision = "7f89fbac80bcc62ce920b6dbc6ca60238d7725d1"
+  version = "v6.15.0"
+
+[[projects]]
   digest = "1:8ef506fc2bb9ced9b151dafa592d4046063d744c646c1bbe801982ce87e4bc24"
   name = "github.com/lib/pq"
   packages = [
@@ -11,6 +28,14 @@
   pruneopts = "UT"
   revision = "4ded0e9383f75c197b3a2aaa6d590ac52df6fd79"
   version = "v1.0.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:064fbf13572fda3d535271a4dccd33eb9a0d97d1f07a6ca3e144ea53527edb69"
+  name = "github.com/souvikhaldar/gomail"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "02add19932b2f7d3c7549121f26e05b9f2309d70"
 
 [[projects]]
   branch = "master"
@@ -24,7 +49,9 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/go-redis/redis",
     "github.com/lib/pq",
+    "github.com/souvikhaldar/gomail",
     "github.com/souvikhaldar/gorand",
   ]
   solver-name = "gps-cdcl"

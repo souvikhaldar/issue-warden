@@ -4,12 +4,12 @@ type Issue struct {
 	Id          int
 	Title       string
 	Description string
-	AssignedTo  int
-	CreatedBy   int
+	AssignedTo  string
+	CreatedBy   string
 	Status      bool
 }
 
-func New(title string, description string, assignedto int, createdby int, status bool) *Issue {
+func New(title string, description string, assignedto, createdby string, status bool) *Issue {
 	return &Issue{
 		Title:       title,
 		Description: description,
