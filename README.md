@@ -22,5 +22,5 @@ Get Postman:
 
 https://www.getpostman.com/collections/ffde2219952b3e67930f
 
-### Reference on how to use collection
+### Reference on how to use the above collection
 https://www.youtube.com/watch?v=mVTsK6ZdY6c
