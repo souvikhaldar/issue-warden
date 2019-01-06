@@ -43,7 +43,7 @@ func AddIssue() http.HandlerFunc {
 					http.Error(w, oops, http.StatusInternalServerError)
 					return
 				}
-				go sendIssueMail(is, 10)
+				go sendIssueMail(is, 720)
 				fmt.Fprintf(w, "Issue added %d", issueID)
 			} else if action[0] == "delete" {
 				var issueid string
