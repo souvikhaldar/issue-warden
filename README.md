@@ -15,9 +15,8 @@ https://youtu.be/plbHTrygfJw
 ## Setup
 Put the email address of the sender and it's corresponding password here.
 
-![image alt text](https://imgur.com/a/KWYnyB0)
+![image alt text](https://github.com/souvikhaldar/issue-warden/blob/master/Screen%20Shot%202019-01-07%20at%201.00.04%20AM.png)
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/KWYnyB0"><a href="//imgur.com/KWYnyB0">issue-warden</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 ## Example CRUD operations
 Get Postman:
 
