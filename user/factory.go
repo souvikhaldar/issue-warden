@@ -28,20 +28,9 @@ func init() {
 		DB:       0,  // use default DB
 	})
 	var e error
-	e, Mailconfig = gomail.New("joeymartin367@gmail.com", "Hu$tl3r11")
+	e, Mailconfig = gomail.New("<source-email-address>", "<password>")
 	if e != nil {
 		fmt.Print(fmt.Errorf("Error in creating config %v", e))
 	}
 
-}
-
-func New(email string, username string, firstname string, lastname string, password string, accesstoken string) *User {
-	return &User{
-		Email:       email,
-		Username:    username,
-		FirstName:   firstname,
-		LastName:    lastname,
-		Password:    password,
-		AccessToken: accesstoken,
-	}
 }
